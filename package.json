@@ -1,5 +1,5 @@
 {
-  "name": "MTA_Subway_GTFS_Tool",
+  "name": "MTA_Subway_GTFS_Toolkit",
   "private": true,
   "version": "0.0.0",
   "description": "Parses the MTA Subway GTFS data, persisting indices on the scheduling and spatial data. Also provides a layer of abstraction via a wrapper module.",
@@ -20,7 +20,7 @@
   "main": index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/availabs/MTA_Subway_GTFS_Tool.git"
+    "url": "git://github.com/availabs/MTA_Subway_GTFS_Toolkit.git"
   },
   "author": "paultomchik",
   "license": "",

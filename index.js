@@ -9,7 +9,9 @@
  */
 
 module.exports = {
-    GTFS_SchedulingDataIndex : require('./lib/GTFS_SchedulingDataIndex') ,
-    GTFS_SpatialDataIndex    : require('./lib/GTFS_SpatialDataIndex')    ,
-    GTFS_Wrapper             : require('./lib/GTFS_Wrapper')             ,
+    GTFS_Wrapper             : require('./lib/GTFS_Wrapper')        ,
+    
+    //Need to implement these...
+    //GTFS_IndexedScheduleData : require('./lib/indexedScheduleData') ,
+    //GTFS_IndexedSpatialData  : require('./lib/indexedSpatialData')  ,
 };

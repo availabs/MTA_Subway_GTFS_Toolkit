@@ -1,0 +1,30 @@
+{
+  "name": "NYCT_Subway_SIRI_API_Server",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Parses the MTA Subway GTFS data, creating an indexed file for paths and stop projections onto paths.",
+  "keywords": [
+    "NYC",
+    "NYCT",
+    "MTA",
+    "Subway",
+    "GTFS"
+  ],
+  "dependencies": {
+    "async": "^1.4.2",
+    "csvtojson": "^0.4.2",
+    "lodash": "^3.10.1",
+    "turf": "^2.0.2"
+  },
+  "scripts": {},
+  "main": "Parser.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/availabs/NYCT_Subway_GTFS_Parser.git"
+  },
+  "author": "paultomchik",
+  "license": "",
+  "devDependencies": {
+    "jsonfile": "^2.2.1"
+  }
+}

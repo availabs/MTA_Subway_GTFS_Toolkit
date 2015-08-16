@@ -1,8 +1,8 @@
 {
-  "name": "NYCT_Subway_SIRI_API_Server",
+  "name": "MTA_Subway_GTFS_Tool",
   "private": true,
   "version": "0.0.0",
-  "description": "Parses the MTA Subway GTFS data, creating an indexed file for paths and stop projections onto paths.",
+  "description": "Parses the MTA Subway GTFS data, persisting indices on the scheduling and spatial data. Also provides a layer of abstraction via a wrapper module.",
   "keywords": [
     "NYC",
     "NYCT",
@@ -17,10 +17,10 @@
     "turf": "^2.0.2"
   },
   "scripts": {},
-  "main": "Parser.js",
+  "main": index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/availabs/NYCT_Subway_GTFS_Parser.git"
+    "url": "git://github.com/availabs/MTA_Subway_GTFS_Tool.git"
   },
   "author": "paultomchik",
   "license": "",

@@ -1,0 +1,2 @@
+Reducing redundancy in the spatial data indices can significantly reduce their size.
+    The same grouping used the indexing script for memoization should be used when persisting.

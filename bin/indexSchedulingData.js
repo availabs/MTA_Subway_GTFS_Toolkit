@@ -36,7 +36,7 @@ console.log(module.parent);
         fileStream;
 
     if (i === tables.length) {
-        fs.writeFile(gtfsDataDir + 'indexedSchedulingData.json', JSON.stringify(dataDict, null, 4));
+        fs.writeFile(gtfsDataDir + 'indexedScheduleData.json', JSON.stringify(dataDict, null, 4));
         return;
     }
 

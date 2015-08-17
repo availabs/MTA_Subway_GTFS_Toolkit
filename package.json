@@ -17,7 +17,7 @@
     "turf": "^2.0.2"
   },
   "scripts": {},
-  "main": index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/availabs/MTA_Subway_GTFS_Toolkit.git"

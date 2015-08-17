@@ -8,18 +8,20 @@ var async       = require('async'),
     fs          = require('fs'),
     Converter   = require("csvtojson").Converter,
     turf        = require('turf'),
-    //jsonfile    = require('jsonfile'),
     _           = require('lodash'),
 
-    // FIXME: hardcoded date
-    gtfsDataDir = __dirname + '/' + '../MTA_Subway_GTFS_Data/20150614/';
+    gtfsDataDir = __dirname + '/' + '../MTA_Subway_GTFS_Data/20150614/'; // FIXME: hardcoded date
+
+
+var jsonfile = (process.env === 'development') ? require('jsonfile') : null; // jshint ignore:line 
 
 
 // Make these config options.
 var LOG_STATS = true,
     DEVIANCE_THRESHOLD = 50;    // How many feet to allow between GTFS stop location
                                 // and its projection onto the path
-                                // before logging the deviance.
+                                // before logging the statistics.
+
 var logOutput = '';
 
 
@@ -89,8 +91,11 @@ function buildTheSpatialDataDictionary (err, results) {
                   '\tSimple Minimization Cases : ' + miniCases + '\n' +
                   '\tLeast Squares Fit Cases   : ' + lsqCases + '\n' +
                   '============================================================================\n\n\n';
+    
+    // Free as much memory as possible before stringifying. (String approx 60M)
+    results = null; 
+    fitStopsToPath.Cache = null;
 
-    results = null; // Allow garbage collection of no-longer-needed GTFS data before stringifying the result.
     fs.writeFile(gtfsDataDir + 'indexedSpatialData.json', 
                  JSON.stringify(theSpatialData));
 
@@ -422,6 +427,7 @@ function getStopIDToCoords (cbak) {
 
 
 // TODO: Move these into functions called if process.env == 'development'
+//          And some config says to work off persisted parsed data.
 //
 // For development, use serialized parsing results.
 //var mocks = Object.keys(gtfsFileParsers).reduce(function (previous, filename) {

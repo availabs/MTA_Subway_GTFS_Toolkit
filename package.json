@@ -13,6 +13,7 @@
   "dependencies": {
     "async": "^1.4.2",
     "csvtojson": "^0.4.2",
+    "jsonfile": "^2.2.1",
     "lodash": "^3.10.1",
     "turf": "^2.0.2"
   },
@@ -24,7 +25,5 @@
   },
   "author": "paultomchik",
   "license": "",
-  "devDependencies": {
-    "jsonfile": "^2.2.1"
-  }
+  "devDependencies": {}
 }

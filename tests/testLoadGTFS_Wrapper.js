@@ -2,7 +2,9 @@
 
 'use strict';
 
-var wrapper = require('../lib/GTFS_Wrapper.js');
+var wrapper = require('../lib/GTFS_Wrapper.js'),
 
-console.log(JSON.stringify(wrapper, null, '    '));
+    obj = wrapper.newGTFSWrapperForScheduleDate();
+
+console.log(JSON.stringify(obj, null, '    '));
 

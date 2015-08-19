@@ -94,7 +94,7 @@ function buildTheSpatialDataDictionary (err, results) {
     
     // Free as much memory as possible before stringifying. (String approx 60M)
     results = null; 
-    fitStopsToPath.Cache = null;
+    fitStopsToPath.cache = null;
 
     fs.writeFile(gtfsDataDir + 'indexedSpatialData.json', 
                  JSON.stringify(theSpatialData));

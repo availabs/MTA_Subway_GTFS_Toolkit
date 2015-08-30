@@ -9,8 +9,7 @@
  */
 
 module.exports = {
-    Wrapper             : require('GTFS_Toolkit').Wrapper        ,
-    WrapperFactory      : require('GTFS_Toolkit').WrapperFactory ,
-    scheduleDataIndexer : require('./lib/scheduleDataIndexer')   ,
-    spatialDataIndexer  : require('./lib/spatialDataIndexer')    ,
+    Wrapper             : require('./lib/Wrapper')              ,
+    scheduleDataIndexer : require('./lib/scheduleDataIndexer')  ,
+    spatialDataIndexer  : require('./lib/spatialDataIndexer')   ,
 };

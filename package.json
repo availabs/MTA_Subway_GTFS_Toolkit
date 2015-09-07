@@ -14,7 +14,7 @@
     "GTFS_Toolkit": "https://github.com/availabs/GTFS_Toolkit/tarball/master"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "main": "index.js",
   "repository": {
@@ -25,6 +25,7 @@
   "license": "",
   "devDependencies": {
     "jest": "^0.1.40",
-    "jest-cli": "^0.4.x"
+    "jest-cli": "^0.4.x",
+    "jsonfile": "^2.2.1"
   }
 }

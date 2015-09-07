@@ -1,15 +1,20 @@
 jest.autoMockOff();
 
-describe('WrapperFactory', function() {
+describe('Wrapper', function() {
 
-    it('Make sure the Factory creates Wrappers.', function() {
-        var Factory = require('GTFS_Toolkit').GTFS_WrapperFactory,
-            config  = { gtfsDataDir : __dirname + '/data/' },
+    it('Make sure we can create a Wrapper.', function() {
+        var path     = require('path'),
+            jsonfile = require('jsonfile'),
 
-            factory = new Factory(config),
+            Wrapper  = require('../lib/Wrapper.js'),
+            config   = require('./.config.js'),
 
-            wrapper = factory.newWrapperForScheduleDate();
 
+            indexedScheduleData = jsonfile.readFileSync(path.join(config.dataDirPath, config.indexedScheduleDataFileName)),
+            indexedSpatialData  = jsonfile.readFileSync(path.join(config.dataDirPath, config.indexedSpatialDataFileName)) ,
+
+            wrapper = new Wrapper(indexedScheduleData, indexedSpatialData);
+            
         expect(wrapper).toBeTruthy();
     });
 });

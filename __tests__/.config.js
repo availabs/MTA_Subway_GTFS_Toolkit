@@ -6,7 +6,7 @@ var path        = require('path'),
 module.exports = {
     gtfsConfigFilePath          : __filename                                         ,
 
-    latestDataURL               : 'http://transitfeeds.com/p/mta/79/latest/download' ,
+    feedURL                     : 'http://transitfeeds.com/p/mta/79/latest/download' ,
 
     dataDirPath                 : dataDirPath                                        ,
     tmpDirPath                  : path.join(dataDirPath, 'tmp')                      ,

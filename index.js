@@ -9,7 +9,6 @@
  */
 
 module.exports = {
-    Wrapper        : require('./lib/Wrapper.js')              ,
-    FeedHandler    : require('GTFS_Toolkit').FeedHandler      ,
-    tripKeyBuilder : require('./lib/utils/tripKeyBuilder.js') ,
+    Wrapper        : require('./lib/Wrapper.js')         ,
+    FeedHandler    : require('GTFS_Toolkit').FeedHandler ,
 };

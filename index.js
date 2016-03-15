@@ -1,3 +1,5 @@
+'use strict' ;
+
 /**
  * MTA_Subway_GTFS_Toolkit parses and indexes the MTA Subway GTFS data feed.
  * It also offers a layer of abstration for working with the GTFS data via a wrapper object.
@@ -9,6 +11,7 @@
  */
 
 module.exports = {
-    Wrapper        : require('./lib/Wrapper.js')         ,
-    FeedHandler    : require('GTFS_Toolkit').FeedHandler ,
+    Wrapper             : require('./lib/Wrapper.js')         ,
+    FeedHandler         : require('GTFS_Toolkit').FeedHandler ,
+    ToolkitEventEmitter : require('GTFS_Toolkit').ToolkitEventEmitter ,
 };

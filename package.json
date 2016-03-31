@@ -23,8 +23,5 @@
   },
   "author": "paultomchik",
   "license": "",
-  "devDependencies": {
-      "jest": "^0.1.40",
-      "jest-cli": "^0.8.2"
-  }
+  "devDependencies": {}
 }

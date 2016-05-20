@@ -11,7 +11,7 @@
     "GTFS"
   ],
   "dependencies": {
-    "GTFS_Toolkit": "https://github.com/availabs/GTFS_Toolkit/tarball/master"
+    "GTFS_Toolkit": "git+https://github.com/availabs/GTFS_Toolkit.git"
   },
   "scripts": {
     "test": "jest --verbose"

@@ -4,8 +4,8 @@
   "dependencies": {
     "GTFS_Toolkit": {
       "version": "0.0.0",
-      "from": "https://github.com/availabs/GTFS_Toolkit/tarball/master",
-      "resolved": "https://github.com/availabs/GTFS_Toolkit/tarball/master",
+      "from": "git+https://github.com/availabs/GTFS_Toolkit.git",
+      "resolved": "git+https://github.com/availabs/GTFS_Toolkit.git#1f4eda6c26732c4ba25902ff7ee942363f8813a7",
       "dependencies": {
         "adm-zip": {
           "version": "0.4.7",

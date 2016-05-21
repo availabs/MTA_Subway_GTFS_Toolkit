@@ -4,7 +4,7 @@
   "dependencies": {
     "GTFS_Toolkit": {
       "version": "0.0.0",
-      "from": "git+https://github.com/availabs/GTFS_Toolkit.git",
+      "from": "git+https://github.com/availabs/GTFS_Toolkit.git#a5474486f9094f7fc35796e9cb174196b1db4c21",
       "resolved": "git+https://github.com/availabs/GTFS_Toolkit.git#a5474486f9094f7fc35796e9cb174196b1db4c21",
       "dependencies": {
         "adm-zip": {
